@@ -111,7 +111,6 @@ int main(int argc, char *argv[])
 
         // prompt for move
         int tile;
-        printf("Tile to move: ");
         do {
             printf("Tile to move: ");
             scanf("%d",&tile);/* code */
