@@ -81,8 +81,6 @@ int main(int argc, char *argv[])
     // accept moves until game is won
     while (true)
     {
-        // clear the screen
-        clear();
 
         // draw the current state of the board
         draw();
@@ -144,21 +142,12 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-/**
- * Clears screen using ANSI escape sequences.
- */
-void clear(void)
-{
-    printf("\033[2J");
-    printf("\033[%d;%dH", 0, 0);
-}
 
 /**
  * Greets player.
  */
 void greet(void)
 {
-    clear();
     printf("WELCOME TO GAME OF FIFTEEN\n");
     usleep(2000000);
 }
